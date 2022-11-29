@@ -1,4 +1,3 @@
-// some comment
 package testng;
 
 import java.time.Duration;
@@ -46,9 +45,9 @@ public class TestFrames {
 			String frameName = frame.getAttribute("name");
 			System.out.println("-----" + frameName + "-----");
 			wd.switchTo().frame(frameName);
- 			WebElement links=wd.findElements(By.tagName("a"));
+			List<WebElement> links =wd.findElements(By.tagName("a"));
 			for (WebElement link : links) {
-				System.out.println(link.gettext());
+				System.out.println(link.getText());
 			}
 			wd.switchTo().defaultContent();
 		}
