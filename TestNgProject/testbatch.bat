@@ -1,5 +1,4 @@
 set projectLocation=TestNgProject
 cd %projectLocation%
-set classpath=%projectLocation%\bin;%projectLocation%\lib\*;
+set classpath=\bin;\lib\*;
 java org.testng.TestNG testngBat.xml
-pause
