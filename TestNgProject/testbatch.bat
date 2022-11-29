@@ -1,4 +1,4 @@
-set projectLocation=F:\Training\Selenium\WS_Git\TestNgProject
+set projectLocation=TestNgProject
 cd %projectLocation%
 set classpath=%projectLocation%\bin;%projectLocation%\lib\*;
 java org.testng.TestNG testngBat.xml
