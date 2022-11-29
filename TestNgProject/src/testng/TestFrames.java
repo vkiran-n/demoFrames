@@ -48,7 +48,7 @@ public class TestFrames {
 			wd.switchTo().frame(frameName);
  			WebElement links=wd.findElements(By.tagName("a"));
 			for (WebElement link : links) {
-				System.out.println(link.gettext();
+				System.out.println(link.gettext());
 			}
 			wd.switchTo().defaultContent();
 		}
